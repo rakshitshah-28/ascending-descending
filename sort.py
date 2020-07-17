@@ -1,15 +1,6 @@
-
 def Sort():
-    #values = list()
-    #while True:
-    #    print("enter 0 to stop.")
-    
-    a = list(map(int, input().split()))
-    #    if a == 0:
-     #       break
-    #values.append(a)
-    a.sort()
-    a.reverse()
+    print('Input Numbers spearted by \'<space>\'')
+    a = list(map(int, input('Enter - ').split(' ')))
     while True:        
         print("1.Ascending order")
         print("2.Descending order")
@@ -19,14 +10,9 @@ def Sort():
         if choice > 3:
             continue
         if choice == 1:
-            print("Ascending order is ",a.sort)
+            print("Ascending order is ",sorted(a, reverse=False))
         elif choice == 2:
-            print("Descending order is ",a.reverse)
+            print("Descending order is ",sorted(a, reverse=True))
         elif choice == 3:
             print("Thank you for using List SORTER !!")
             break
-
-    
-
-    
-
